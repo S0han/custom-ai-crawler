@@ -4,6 +4,7 @@ from crawl4ai import AsyncWebCrawler
 
 async def main():
     async with AsyncWebCrawler() as crawler:
+        
         result = await crawler.arun(url="https://www.thekaneologist.com/")
         
         data = {
